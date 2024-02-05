@@ -1,6 +1,5 @@
 float dt = 0.1, t = 0, acc1=0.8, acc2=1.3, acc3=-0.07, acc4=10, acc;
-PVector a, b, p, c, d, e, vel1, vel2, vel3, vel4, vel, u_t, a_t;
-Boolean back = false;
+PVector a, b, p, c, d, e, vel1, vel2, vel3, vel4, vel;
 
 void setup(){
   size(640, 600); // Definimos tamaño ventana
@@ -94,7 +93,6 @@ void draw(){
     acc= 0;
   }
   
-  u_t = PVector.mult(vel, t);
   
   PVector v_copy = vel.copy();
   v_copy.normalize();
